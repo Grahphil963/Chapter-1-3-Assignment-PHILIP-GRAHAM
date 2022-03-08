@@ -16,7 +16,7 @@ namespace Chapter_1_3_Assignment_PHILIP_GRAHAM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new BasicInput());
         }
     }
 }

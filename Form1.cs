@@ -10,15 +10,23 @@ using System.Windows.Forms;
 
 namespace Chapter_1_3_Assignment_PHILIP_GRAHAM
 {
-    public partial class MainForm : Form
+    public partial class BasicInput : Form
     {
-        public MainForm()
+        public BasicInput()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string name = txtName.Text;
+            int age = txtAge.Text;
+
 
         }
     }
