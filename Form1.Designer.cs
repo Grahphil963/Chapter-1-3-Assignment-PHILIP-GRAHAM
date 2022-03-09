@@ -32,9 +32,11 @@
             this.btnSubmit = new System.Windows.Forms.Button();
             this.lblInstructionName = new System.Windows.Forms.Label();
             this.lblInstructionAge = new System.Windows.Forms.Label();
-            this.txtAge = new System.Windows.Forms.TextBox();
             this.lblHeight = new System.Windows.Forms.Label();
             this.txtHeight = new System.Windows.Forms.TextBox();
+            this.NudAge = new System.Windows.Forms.NumericUpDown();
+            this.lblOutput = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.NudAge)).BeginInit();
             this.SuspendLayout();
             // 
             // txtName
@@ -46,9 +48,9 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(578, 27);
+            this.btnSubmit.Location = new System.Drawing.Point(541, 31);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(164, 111);
+            this.btnSubmit.Size = new System.Drawing.Size(164, 114);
             this.btnSubmit.TabIndex = 1;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
@@ -72,37 +74,46 @@
             this.lblInstructionAge.TabIndex = 3;
             this.lblInstructionAge.Text = "Please Enter Your Age";
             // 
-            // txtAge
-            // 
-            this.txtAge.Location = new System.Drawing.Point(398, 76);
-            this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(100, 20);
-            this.txtAge.TabIndex = 4;
-            // 
             // lblHeight
             // 
             this.lblHeight.AutoSize = true;
-            this.lblHeight.Location = new System.Drawing.Point(241, 125);
+            this.lblHeight.Location = new System.Drawing.Point(220, 125);
             this.lblHeight.Name = "lblHeight";
-            this.lblHeight.Size = new System.Drawing.Size(126, 13);
+            this.lblHeight.Size = new System.Drawing.Size(172, 13);
             this.lblHeight.TabIndex = 5;
-            this.lblHeight.Text = "Please Enter Your Height";
+            this.lblHeight.Text = "Please Enter Your Height in Meters";
             // 
             // txtHeight
             // 
-            this.txtHeight.Location = new System.Drawing.Point(398, 125);
+            this.txtHeight.Location = new System.Drawing.Point(398, 122);
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(100, 20);
             this.txtHeight.TabIndex = 6;
+            // 
+            // NudAge
+            // 
+            this.NudAge.Location = new System.Drawing.Point(398, 74);
+            this.NudAge.Name = "NudAge";
+            this.NudAge.Size = new System.Drawing.Size(100, 20);
+            this.NudAge.TabIndex = 7;
+            // 
+            // lblOutput
+            // 
+            this.lblOutput.AutoSize = true;
+            this.lblOutput.Location = new System.Drawing.Point(221, 197);
+            this.lblOutput.Name = "lblOutput";
+            this.lblOutput.Size = new System.Drawing.Size(0, 13);
+            this.lblOutput.TabIndex = 8;
             // 
             // BasicInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblOutput);
+            this.Controls.Add(this.NudAge);
             this.Controls.Add(this.txtHeight);
             this.Controls.Add(this.lblHeight);
-            this.Controls.Add(this.txtAge);
             this.Controls.Add(this.lblInstructionAge);
             this.Controls.Add(this.lblInstructionName);
             this.Controls.Add(this.btnSubmit);
@@ -110,6 +121,7 @@
             this.Name = "BasicInput";
             this.Text = "Chapter Assignment";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.NudAge)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,9 +133,10 @@
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label lblInstructionName;
         private System.Windows.Forms.Label lblInstructionAge;
-        private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.Label lblHeight;
         private System.Windows.Forms.TextBox txtHeight;
+        private System.Windows.Forms.NumericUpDown NudAge;
+        private System.Windows.Forms.Label lblOutput;
     }
 }
 
