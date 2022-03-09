@@ -27,7 +27,7 @@ namespace Chapter_1_3_Assignment_PHILIP_GRAHAM
             string name = txtName.Text;
             int age = Convert.ToInt32(NudAge.Text);
             double height = Convert.ToDouble(txtHeight.Text);
-            lblOutput.Text = ($"Hi , {name} you have roughly {82 - age} years left to live and you are {2.51 - height} meters shorter than the tallest person alive right now ");
+            lblOutput.Text = ($"Hi , {name} you have roughly {82 - age} years left to live and you are {2.51 - height} meters shorter than the tallest person alive right now. ");
 
 
             

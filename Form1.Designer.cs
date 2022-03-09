@@ -41,58 +41,67 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(398, 31);
+            this.txtName.Location = new System.Drawing.Point(206, 18);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 20);
             this.txtName.TabIndex = 0;
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(541, 31);
+            this.btnSubmit.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.Black;
+            this.btnSubmit.Location = new System.Drawing.Point(408, 18);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(164, 114);
             this.btnSubmit.TabIndex = 1;
             this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // lblInstructionName
             // 
             this.lblInstructionName.AutoSize = true;
-            this.lblInstructionName.Location = new System.Drawing.Point(241, 31);
+            this.lblInstructionName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInstructionName.ForeColor = System.Drawing.Color.White;
+            this.lblInstructionName.Location = new System.Drawing.Point(12, 18);
             this.lblInstructionName.Name = "lblInstructionName";
-            this.lblInstructionName.Size = new System.Drawing.Size(126, 13);
+            this.lblInstructionName.Size = new System.Drawing.Size(188, 20);
             this.lblInstructionName.TabIndex = 2;
             this.lblInstructionName.Text = "Please Enter Your Name:";
             // 
             // lblInstructionAge
             // 
             this.lblInstructionAge.AutoSize = true;
-            this.lblInstructionAge.Location = new System.Drawing.Point(241, 76);
+            this.lblInstructionAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInstructionAge.ForeColor = System.Drawing.Color.White;
+            this.lblInstructionAge.Location = new System.Drawing.Point(12, 60);
             this.lblInstructionAge.Name = "lblInstructionAge";
-            this.lblInstructionAge.Size = new System.Drawing.Size(114, 13);
+            this.lblInstructionAge.Size = new System.Drawing.Size(175, 20);
             this.lblInstructionAge.TabIndex = 3;
-            this.lblInstructionAge.Text = "Please Enter Your Age";
+            this.lblInstructionAge.Text = "Please Enter Your Age:";
             // 
             // lblHeight
             // 
             this.lblHeight.AutoSize = true;
-            this.lblHeight.Location = new System.Drawing.Point(220, 125);
+            this.lblHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeight.ForeColor = System.Drawing.Color.White;
+            this.lblHeight.Location = new System.Drawing.Point(12, 103);
             this.lblHeight.Name = "lblHeight";
-            this.lblHeight.Size = new System.Drawing.Size(172, 13);
+            this.lblHeight.Size = new System.Drawing.Size(262, 20);
             this.lblHeight.TabIndex = 5;
-            this.lblHeight.Text = "Please Enter Your Height in Meters";
+            this.lblHeight.Text = "Please Enter Your Height in Meters:";
             // 
             // txtHeight
             // 
-            this.txtHeight.Location = new System.Drawing.Point(398, 122);
+            this.txtHeight.Location = new System.Drawing.Point(280, 105);
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(100, 20);
             this.txtHeight.TabIndex = 6;
             // 
             // NudAge
             // 
-            this.NudAge.Location = new System.Drawing.Point(398, 74);
+            this.NudAge.Location = new System.Drawing.Point(206, 60);
             this.NudAge.Name = "NudAge";
             this.NudAge.Size = new System.Drawing.Size(100, 20);
             this.NudAge.TabIndex = 7;
@@ -100,7 +109,8 @@
             // lblOutput
             // 
             this.lblOutput.AutoSize = true;
-            this.lblOutput.Location = new System.Drawing.Point(221, 197);
+            this.lblOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutput.Location = new System.Drawing.Point(12, 136);
             this.lblOutput.Name = "lblOutput";
             this.lblOutput.Size = new System.Drawing.Size(0, 13);
             this.lblOutput.TabIndex = 8;
@@ -109,7 +119,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.MidnightBlue;
+            this.ClientSize = new System.Drawing.Size(584, 181);
             this.Controls.Add(this.lblOutput);
             this.Controls.Add(this.NudAge);
             this.Controls.Add(this.txtHeight);
@@ -118,6 +129,7 @@
             this.Controls.Add(this.lblInstructionName);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtName);
+            this.ForeColor = System.Drawing.Color.Transparent;
             this.Name = "BasicInput";
             this.Text = "Chapter Assignment";
             this.Load += new System.EventHandler(this.Form1_Load);
